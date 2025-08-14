@@ -3,6 +3,7 @@ app_title = "Rentals"
 app_publisher = "reagan"
 app_description = "Manage cab rentals in frappe"
 app_email = "test@test.com"
+app_logo_url = "/assets/rentals/images/rental-logo.png"
 app_license = "mit"
 
 # Apps
@@ -11,15 +12,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "rentals",
-# 		"logo": "/assets/rentals/logo.png",
-# 		"title": "Rentals",
-# 		"route": "/rentals",
-# 		"has_permission": "rentals.api.permission.has_app_permission"
-# 	}
-# ]
+#add_to_apps_screen = [
+#	{
+#		"name": "rentals",
+#		"logo": "/assets/rentals/images/rental-logo.png",
+#		"title": "Rentals",
+#		"route": "/rentals",
+#		"has_permission": "rentals.api.permission.has_app_permission"
+#	}
+#]
 
 # Includes in <head>
 # ------------------
@@ -57,7 +58,8 @@ app_license = "mit"
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+#home_page = "login"
+#home_page = "index"
 
 # website user home page (by Role)
 # role_home_page = {
@@ -145,10 +147,21 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+ 	"ToDo": {
+        "before_insert":"rentals.rentals.api.throw_message"
+ 	}
+}
+
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
+    "Cron":{
+        "5 17 * 8 2":[
+            "rentals.rentals.api.send_payment_remainder_email"
+        ]
+    }
 # 	"all": [
 # 		"rentals.tasks.all"
 # 	],
@@ -164,7 +177,7 @@ app_license = "mit"
 # 	"monthly": [
 # 		"rentals.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------

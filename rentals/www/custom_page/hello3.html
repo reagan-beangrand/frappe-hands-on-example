@@ -1,0 +1,9 @@
+{% extends "templates/web.html" %}
+{% block page_content %}
+{% set user = frappe.session %}
+<ul>    
+    <li> {{ user }}</li>
+    
+     <li> {{ my_test_text }}</li>
+</ul>
+{% endblock %}

@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2025-08-10 20:18:07.697836",
+ "date_changed": "insurance_expiry",
+ "days_in_advance": 3,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Vehicle",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Add your message here",
+ "message_type": "Markdown",
+ "modified": "2025-08-14 20:30:46.248136",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Insurance Expiry Remainder",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Insurance for the vehicle {{ doc.tite }} will expire in 3 days!!!"
+}

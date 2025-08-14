@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-08-08 20:47:25.689847",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "make",
+  "year",
+  "colour",
+  "insurance_expiry",
+  "column_break_fipb",
+  "model",
+  "license_plate",
+  "is_published",
+  "route",
+  "vehicle_image",
+  "status",
+  "condition"
+ ],
+ "fields": [
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Make",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "colour",
+   "fieldtype": "Data",
+   "label": "Colour"
+  },
+  {
+   "fieldname": "column_break_fipb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Model",
+   "reqd": 1
+  },
+  {
+   "fieldname": "license_plate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "License Plate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published?"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "vehicle_image",
+   "fieldtype": "Attach Image",
+   "label": "Vehicle Image"
+  },
+  {
+   "fieldname": "insurance_expiry",
+   "fieldtype": "Date",
+   "label": "Insurance Expiry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nOut of Service\nSold\nCrushed"
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Rating",
+   "label": "Condition"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "hide_toolbar": 1,
+ "image_field": "vehicle_image",
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2025-08-10 20:33:08.600070",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Vehicle",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "vehicles",
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Green",
+   "title": "Active"
+  },
+  {
+   "color": "Red",
+   "title": "Out of Service"
+  },
+  {
+   "color": "Yellow",
+   "title": "Sold"
+  },
+  {
+   "color": "Pink",
+   "title": "Crushed"
+  }
+ ],
+ "title_field": "title",
+ "translated_doctype": 1
+}
