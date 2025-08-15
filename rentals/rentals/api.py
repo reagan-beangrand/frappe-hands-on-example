@@ -5,7 +5,7 @@ import frappe
 def get_testapimethod():
     return "testAPImrthodcall"
 
-def throw_message(doc,event):
+def throw_message(doc,event):#hook.py -doc_events
     frappe.throw("doc")
 
 def send_payment_remainder_email():
