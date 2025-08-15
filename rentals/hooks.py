@@ -148,11 +148,11 @@ permission_query_conditions = {
 # 	}
 # }
 
-doc_events = {
- 	"ToDo": {
-        "before_insert":"rentals.rentals.api.throw_message"
- 	}
-}
+#doc_events = {
+#	"ToDo": {
+#       "before_insert":"rentals.rentals.api.throw_message"
+# 	}
+#}
 
 # Scheduled Tasks
 # ---------------
@@ -256,3 +256,13 @@ scheduler_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+#fixtures=[
+#    "Vehicle Type"
+#]
+
+fixtures = [
+    {
+        "dt":"Vehicle Type",
+        "filters":{"is_standard":1}
+    }
+]
