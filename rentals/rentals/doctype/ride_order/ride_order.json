@@ -58,13 +58,14 @@
    "fieldname": "vehicle",
    "fieldtype": "Link",
    "label": "Vehicle",
+   "link_filters": "[[\"Vehicle\",\"year\",\">\",2000]]",
    "options": "Vehicle"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-09 21:53:12.097197",
+ "modified": "2025-08-15 14:28:53.914299",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Order",
