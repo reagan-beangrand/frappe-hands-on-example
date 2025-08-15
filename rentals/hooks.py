@@ -256,6 +256,13 @@ scheduler_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-fixtures=[
-    "Vehicle Type"
+#fixtures=[
+#    "Vehicle Type"
+#]
+
+fixtures = [
+    {
+        "dt":"Vehicle Type",
+        "filters":{"is_standard":1}
+    }
 ]

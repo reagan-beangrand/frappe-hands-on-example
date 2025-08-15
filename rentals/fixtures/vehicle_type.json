@@ -3,21 +3,16 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Vehicle Type",
-  "modified": "2025-08-15 20:33:43.523176",
-  "name": "SUV"
- },
- {
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Vehicle Type",
-  "modified": "2025-08-15 20:33:56.289944",
+  "is_standard": 1,
+  "modified": "2025-08-15 20:52:51.873057",
   "name": "Sedan"
  },
  {
   "description": null,
   "docstatus": 0,
   "doctype": "Vehicle Type",
-  "modified": "2025-08-15 20:34:13.644688",
+  "is_standard": 1,
+  "modified": "2025-08-15 20:52:44.749081",
   "name": "Hatchback"
  }
 ]
