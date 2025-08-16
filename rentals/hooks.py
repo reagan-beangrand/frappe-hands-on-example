@@ -264,5 +264,7 @@ fixtures = [
     {
         "dt":"Vehicle Type",
         "filters":{"is_standard":1}
-    }
+    },
+    "Custom Field",
+    "Workflow"
 ]
